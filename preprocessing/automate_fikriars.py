@@ -41,8 +41,8 @@ def preprocess_data(raw_data_path, output_dir):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Automated Preprocessing")
-    parser.add_argument("--input", type=str, default="../namadataset_raw/high_diamond_ranked_10min.csv", help="Path to raw dataset")
-    parser.add_argument("--output_dir", type=str, default="../namadataset_preprocessing", help="Directory to save preprocessed data")
+    parser.add_argument("--input", type=str, default="../league_of_legends_raw/high_diamond_ranked_10min.csv", help="Path to raw dataset")
+    parser.add_argument("--output_dir", type=str, default="../league_of_legends_preprocessing", help="Directory to save preprocessed data")
     
     args = parser.parse_args()
     preprocess_data(args.input, args.output_dir)
